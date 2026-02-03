@@ -1,113 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><title>Apple Cell Phone | Grupo EPSA</title></title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f5f5f5;color:#111;}
-header{background:#000;color:#fff;padding:15px;text-align:center;font-size:20px;font-weight:bold;}
-nav{background:#111;padding:10px;text-align:center;}
-nav a{color:#fff;margin:0 10px;text-decoration:none;font-size:14px;}
-.hero{background:linear-gradient(135deg,#000,#444);color:#fff;text-align:center;padding:40px 20px;}
-.hero h1{font-size:28px;margin-bottom:10px;}
-.hero p{font-size:16px;margin-bottom:20px;}
-.btn{display:inline-block;background:#25D366;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;}
-.container{max-width:1000px;margin:30px auto;padding:0 15px;}
-.section{background:#fff;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);margin-bottom:25px;}
-.section h2{text-align:center;margin-bottom:15px;}
-.carousel{position:relative;width:100%;max-width:600px;margin:20px auto;overflow:hidden;border-radius:10px;}
-.carousel img{width:100%;display:none;}
-.carousel img.active{display:block;}
-.carousel button{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.6);color:#fff;border:none;padding:10px;font-size:18px;cursor:pointer;}
-.prev{left:10px;}
-.next{right:10px;}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px;}
-.card{background:#f9f9f9;padding:15px;border-radius:8px;text-align:center;border:1px solid #ddd;}
-footer{background:#000;color:#fff;text-align:center;padding:20px;font-size:14px;}
-.qr{text-align:center;margin-top:15px;}
-.qr img{width:150px;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo EPSA - Portfólio Empresarial</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: radial-gradient(circle, #111, #000);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: gold;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: gold;
+    }
+
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .brand-card {
+      background: #111;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .brand-card:hover {
+      transform: scale(1.03);
+      border-color: gold;
+    }
+
+    .brand-card img {
+      max-width: 120px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .brand-card h3 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      margin-top: 60px;
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      margin-top: 60px;
+      color: #777;
+    }
+
+    /* Botão WhatsApp flutuante */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>Apple Cell Phone</h1>
-  <p>Uma empresa do Grupo EPSA S.A</p>
+  <h1>Grupo EPSA S.A</h1>
+  <p>Portfólio de empresas que transformam negócios em resultados</p>
 </header>
-  <p>Uma empresa do Grupo EPSA S.A</p>
-<a href="#sobre">Sobre</a>
-<a href="#produtos">Produtos</a>
-<a href="#contato">Contato</a>
-</nav>
-
-<section class="hero">
-<h1>iPhones & Acessórios Premium</h1>
-<p>5 anos no ramo oferecendo qualidade e confiança.</p>
-<a class="btn" href="https://wa.me/5511985662625" target="_blank">Fale no WhatsApp</a>
-</section>
 
 <div class="container">
 
-<section id="sobre" class="section">
-<h2>Sobre a Apple Cell Phone</h2>
-<p>Somos um braço da Órix Business, especializados em iPhones e acessórios premium. Trabalhamos com produtos selecionados, atendimento profissional e suporte completo ao cliente.</p>
-</section>
+  <h2 class="section-title">Empresas do Grupo</h2>
 
-<section id="produtos" class="section">
-<h2>Nossos Produtos</h2>
+  <div class="brands">
 
-<div class="carousel">
-<img src="img1.jpg" class="active">
-<img src="img2.jpg">
-<img src="img3.jpg">
-<button class="prev">&#10094;</button>
-<button class="next">&#10095;</button>
-</div>
+    <div class="brand-card">
+      <img src="22535d7f-63b0-4e9c-a4ce-41a2e715182e.jpeg" alt="Apple Cell Phone">
+      <h3>Apple Cell Phone</h3>
+      <p>Especializada em iPhones e acessórios premium.</p>
+    </div>
 
-<div class="cards">
-<div class="card">📱 iPhones novos e seminovos</div>
-<div class="card">🎧 Acessórios premium</div>
-<div class="card">🔋 Capas, carregadores e fones</div>
-<div class="card">🚚 Envio rápido e seguro</div>
-</div>
+    <div class="brand-card">
+      <img src="IMG_0579.jpeg" alt="Lava & Brilha">
+      <h3>Lava & Brilha</h3>
+      <p>Serviços de limpeza e estética automotiva.</p>
+    </div>
 
-</section>
+    <div class="brand-card">
+      <img src="IMG_0583.jpeg" alt="P&B Modas Masculinas">
+      <h3>P&B Modas Masculinas</h3>
+      <p>Moda masculina com estilo e qualidade.</p>
+    </div>
 
-<section id="contato" class="section">
-<h2>Contato</h2>
-<p><strong>CEO:</strong> <a href="https://wa.me/5511985662625">11 98566-2625</a></p>
-<p><strong>Vendas:</strong> <a href="https://wa.me/5511954471918">11 95447-1918</a></p>
-<p><strong>Adm:</strong> <a href="https://wa.me/5511976997380">11 97699-7380</a></p>
-<p><strong>Gerente Comercial:</strong> <a href="https://wa.me/5511963397401">11 96339-7401</a></p>
+    <div class="brand-card">
+      <img src="IMG_9898.jpeg" alt="P&B Modas Femininas">
+      <h3>P&B Modas Femininas</h3>
+      <p>Moda feminina moderna e sofisticada.</p>
+    </div>
 
-<div class="qr">
-<p>Instagram: @applecellphone2</p>
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://instagram.com/applecellphone2">
-</div>
-</section>
+  </div>
+
+  <div class="about">
+    <h2 class="section-title">Sobre o Grupo EPSA</h2>
+    <p>
+      O Grupo EPSA S.A é um ecossistema empresarial criado para desenvolver marcas sólidas,
+      inovadoras e lucrativas. Cada empresa do grupo representa uma estratégia de crescimento,
+      qualidade e visão de futuro.
+    </p>
+    <br>
+    <p>
+      Fundado por Tiago Santos, o grupo nasceu com o propósito de transformar ideias em negócios
+      reais, conectando tecnologia, design e estratégia empresarial.
+    </p>
+  </div>
 
 </div>
 
 <footer>
-<p>© 2026 Órix Business - Apple Cell Phone</p>
+  <p>© 2026 - Grupo EPSA S.A | Todos os direitos reservados</p>
 </footer>
 
-<script>
-let index=0;
-const imgs=document.querySelectorAll(".carousel img");
-const prev=document.querySelector(".prev");
-const next=document.querySelector(".next");
-
-function show(i){
-imgs.forEach(img=>img.classList.remove("active"));
-imgs[i].classList.add("active");
-}
-prev.onclick=()=>{index=(index-1+imgs.length)%imgs.length;show(index);}
-next.onclick=()=>{index=(index+1)%imgs.length;show(index);}
-setInterval(()=>{index=(index+1)%imgs.length;show(index);},3000);
-</script>
+<a class="whatsapp" href="https://wa.me/5511985662625" target="_blank">
+  💬 WhatsApp
+</a>
 
 </body>
 </html>
